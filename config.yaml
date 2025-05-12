@@ -13,6 +13,7 @@ points:
         spread: 1kx
       anchor:
         rotate: 8
+        shift: [ 100,-100]
       columns:
         outer:
         pinky:
@@ -128,4 +129,33 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+pcbs:
+  main:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
 
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust: 
+          shift: [ 0,-5]
+      nice_nano:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: matrix_inner_top
+          shift: [ 0,0]
+          rotate: 0
