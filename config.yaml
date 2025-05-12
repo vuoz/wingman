@@ -16,21 +16,30 @@ points:
         shift: [ 100,-100]
       columns:
         outer:
+          key.column_net: P4
         pinky:
+          key.column_net: P5
         ring:
           key.splay: -5
           key.origin: [-12, -19]
           key.stagger: 12
+          key.column_net: P6
         middle:
           key.stagger: 5
+          key.column_net: P7
         index:
           key.stagger: -6
+          key.column_net: P8
         inner:
           key.stagger: -2
+          key.column_net: P9
       rows:
         bottom:
+          row_net: P0
         home:
+          row_net: P1
         top:
+          row_net: P2
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -47,6 +56,9 @@ points:
           key.origin: [-9.5, -9]
       rows:
         thumb:
+          row_net: P3
+
+
   rotate: -20
   mirror:
     ref: matrix_pinky_home
