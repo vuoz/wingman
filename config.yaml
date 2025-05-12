@@ -143,7 +143,8 @@ pcbs:
         params:
           keycaps: true
           reverse: false
-          from: "{{column_net}}"
+          hotswap: true
+          from: "{{col_net}}"
           to: "{{colrow}}"
       diode:
         what: diode
@@ -159,3 +160,12 @@ pcbs:
           ref.aggregate.parts: [ matrix_inner_top, mirror_matrix_inner_top]
           shift: [ 0,0]
           rotate: 0
+      reset:
+        what: button
+        params:
+          from: GND
+          to: RST
+        where:
+          ref.aggregate.parts: [ matrix_inner_bottom, mirror_matrix_inner_bottom]
+          shift: [ 0,-1]
+          rotate: -90
