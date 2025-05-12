@@ -1,0 +1,131 @@
+meta:
+  engine: 4.1.0
+units:
+  kx: cx
+  ky: cy
+  px: kx + 4
+  py: ky + 4
+points:
+  zones:
+    matrix:
+      key:
+        padding: 1ky
+        spread: 1kx
+      anchor:
+        rotate: 8
+      columns:
+        outer:
+        pinky:
+        ring:
+          key.splay: -5
+          key.origin: [-12, -19]
+          key.stagger: 12
+        middle:
+          key.stagger: 5
+        index:
+          key.stagger: -6
+        inner:
+          key.stagger: -2
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-15, -20]
+      columns:
+        near:
+        home:
+          key.spread: 21.25
+          key.splay: -5
+          key.origin: [-11.75, -9]
+        far:
+          key.spread: 21.25
+          key.splay: -15
+          key.origin: [-9.5, -9]
+      rows:
+        thumb:
+  rotate: -20
+  mirror:
+    ref: matrix_pinky_home
+    distance: 12kx
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px,py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [ kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_bottom
+          shift: [ -0.5px,-0.5py]
+        - ref: matrix_outer_top
+          shift: [-0.5px, +0.5py]
+        - ref: matrix_pinky_top
+          shift: [-0.5px,+0.5py]
+        - ref: matrix_ring_top
+          shift: [-0.5px, +0.5py]
+        - ref: matrix_middle_top
+          shift: [-0.5px, +0.5py]
+        - ref: matrix_middle_top
+          shift: [ 0.5px,0.5py]
+        - ref: matrix_inner_top
+          shift: [0.5px, +0.5py]
+        - ref: mirror_matrix_inner_top
+          shift: [0.5px, 0.5py]
+        - ref: mirror_matrix_middle_top
+          shift: [0.5px, 0.5py]
+        - ref: mirror_matrix_middle_top
+          shift: [-0.5px, 0.5py]
+        - ref: mirror_matrix_ring_top
+          shift: [-0.5px, +0.5py]
+        - ref: mirror_matrix_pinky_top
+          shift: [-0.5px, +0.5py]
+        - ref: mirror_matrix_outer_top
+          shift: [-0.5px, +0.5py]
+        - ref: mirror_matrix_outer_bottom
+          shift : [ -0.5px,-0.5py]
+        - ref: mirror_matrix_pinky_bottom
+          shift: [-0.5px,-0.5py]
+        - ref: mirror_matrix_pinky_bottom
+          shift: [-0.5px,-0.5py]
+        - ref: mirror_matrix_ring_bottom
+          shift: [-0.25px,-1py]
+        - ref: mirror_matrix_middle_bottom
+          shift: [-0.5px,-1py]
+        - ref: mirror_thumbfan_near_thumb
+          shift: [ -0.5px, -0.5py]
+        - ref: mirror_thumbfan_home_thumb
+          shift: [ -0.5px, -0.5py]
+        - ref: mirror_thumbfan_far_thumb
+          shift: [ -0.5px, -0.5py]
+        - ref: mirror_thumbfan_far_thumb
+          shift: [ 0.5px, -0.5py]
+        - ref: thumbfan_far_thumb
+          shift: [ 0.5px, -0.5py]
+        - ref: thumbfan_far_thumb
+          shift: [ -0.5px, -0.5py]
+        - ref: thumbfan_home_thumb
+          shift: [ -0.5px,-0.5py]
+        - ref: thumbfan_near_thumb
+          shift: [ -0.5px, -0.5py]
+        - ref: matrix_middle_bottom
+          shift: [-0.5px,-1py]
+        - ref: matrix_ring_bottom
+          shift: [-0.25px,-1py]
+
+
+
+
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+
