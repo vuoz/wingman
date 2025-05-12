@@ -156,6 +156,6 @@ pcbs:
       nice_nano:
         what: ceoloide/mcu_nice_nano
         where:
-          ref: matrix_inner_top
+          ref.aggregate.parts: [ matrix_inner_top, mirror_matrix_inner_top]
           shift: [ 0,0]
           rotate: 0
