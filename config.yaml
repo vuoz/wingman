@@ -282,3 +282,15 @@ pcbs:
           ref: mirror_matrix_inner_bottom 
           shift: [0.44kx,-0.52ky]
 
+## hole in the thumbcluster
+      hole_bottom_thumb_left:
+         what: ceoloide/mounting_hole_plated
+         where:
+           ref: thumbfan_home_thumb
+           shift: [0.65kx,-0.1ky]
+
+      hole_bottom_thumb_right:
+         what: ceoloide/mounting_hole_plated
+         where:
+           ref: mirror_thumbfan_home_thumb
+           shift: [0.65kx,-0.1ky]
