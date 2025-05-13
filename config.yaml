@@ -35,11 +35,14 @@ points:
           key.col_net: P9
       rows:
         bottom:
-          row_net: P0
+          row_net: P19
+          mirror.row_net: P2
         home:
-          row_net: P1
+          row_net: P20
+          mirror.row_net: P0
         top:
-          row_net: P2
+          row_net: P21
+          mirror.row_net: P1
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -59,7 +62,8 @@ points:
           key.col_net: P9
       rows:
         thumb:
-          row_net: P3
+          row_net: P18
+          mirror.row_net: P3
 
   rotate: -20
   mirror:
@@ -185,3 +189,23 @@ pcbs:
           ref.aggregate.parts: [ matrix_inner_bottom, mirror_matrix_inner_bottom]
           shift: [ 0,-1]
           rotate: -90
+      battery:
+        what: ceoloide/battery_connector_jst_ph_2
+        params:
+          side: "F"
+          BAT_P: VCC
+          BAT_N: GND
+        where:
+          ref.aggregate.parts: [ matrix_inner_bottom, mirror_matrix_inner_bottom]
+          shift: [ -1,-1]
+          rotate: 0
+
+      nice_view:
+        what: ceoloide/display_nice_view
+        params:
+          side: "F"
+
+        where:
+          ref.aggregate.parts: [matrix_inner_home, mirror_matrix_inner_home]
+          shift: [ 0,0]
+          rotate: 90
