@@ -9,8 +9,8 @@ points:
   zones:
     matrix:
       key:
-        padding: 1ky
-        spread: 1kx
+        padding: 1ky + 1
+        spread: 1kx + 1
       anchor:
         rotate: 8
         shift: [ 100,-100]
@@ -208,4 +208,76 @@ pcbs:
         where:
           ref.aggregate.parts: [matrix_inner_home, mirror_matrix_inner_home]
           shift: [ 0,0]
-          rotate: 90
+          rotate: -90
+
+      hole_top_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_outer_top
+          shift: [0.5kx,-0.3ky]
+
+      hole_top_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_outer_top
+          shift: [0.5kx,-0.3ky]
+
+      hole_bottom_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_outer_bottom 
+          shift: [0.5kx,-0.3ky]
+
+      hole_bottom_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_outer_bottom 
+          shift: [0.5kx,-0.3ky]
+
+      hole_middle_top_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_middle_top
+          shift: [0.5kx,-0.4ky]
+
+      hole_middle_bottom_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_middle_bottom 
+          shift: [0.5kx,-0.4ky]
+
+      hole_middle_top_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_middle_top
+          shift: [0.5kx,-0.4ky]
+
+      hole_middle_bottom_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_middle_bottom 
+          shift: [0.5kx,-0.4ky]
+
+      hole_top_inner_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_inner_top 
+          shift: [0.5kx,-0.3ky]
+
+      hole_top_inner_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_inner_top 
+          shift: [0.5kx,-0.3ky]
+
+      hole_bottom_inner_left:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_inner_bottom 
+          shift: [0.5kx,-0.3ky]
+      hole_bottom_inner_right:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: mirror_matrix_inner_bottom 
+          shift: [0.5kx,-0.3ky]
+
