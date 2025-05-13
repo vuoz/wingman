@@ -263,22 +263,22 @@ pcbs:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_inner_top 
-          shift: [0.5kx,-0.5ky]
+          shift: [0.4kx,-0.5ky]
 
       hole_top_inner_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_inner_top 
-          shift: [0.5kx,-0.5ky]
+          shift: [0.4kx,-0.5ky]
 
       hole_bottom_inner_left:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_inner_bottom 
-          shift: [0.5kx,-0.5ky]
+          shift: [0.4kx,-0.5ky]
       hole_bottom_inner_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_inner_bottom 
-          shift: [0.5kx,-0.5ky]
+          shift: [0.4kx,-0.5ky]
 
