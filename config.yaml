@@ -46,18 +46,20 @@ points:
         shift: [-15, -20]
       columns:
         near:
+          key.column_net: P7
         home:
           key.spread: 21.25
           key.splay: -5
           key.origin: [-11.75, -9]
+          key.column_net: P8
         far:
           key.spread: 21.25
           key.splay: -15
           key.origin: [-9.5, -9]
+          key.column_net: P9
       rows:
         thumb:
           row_net: P3
-
 
   rotate: -20
   mirror:
@@ -168,6 +170,8 @@ pcbs:
           shift: [ 0,-5]
       nice_nano:
         what: ceoloide/mcu_nice_nano
+        params:
+          side: "B"
         where:
           ref.aggregate.parts: [ matrix_inner_top, mirror_matrix_inner_top]
           shift: [ 0,0]
