@@ -199,16 +199,13 @@ pcbs:
           ref.aggregate.parts: [ matrix_inner_bottom, mirror_matrix_inner_bottom]
           shift: [ -1,-1]
           rotate: 0
-
-      nice_view:
-        what: ceoloide/display_nice_view
-        params:
-          side: "F"
-
+      power:
+        what: ceoloide/reset_switch_smd_side
         where:
-          ref.aggregate.parts: [matrix_inner_home, mirror_matrix_inner_home]
-          shift: [ 0,0]
-          rotate: -90
+          ref.aggregate.parts: [ matrix_inner_top, mirror_matrix_inner_top]
+          shift: [ 1,0]
+          rotate: 0
+
 
 ### outer most holes
       hole_top_left:
@@ -271,7 +268,6 @@ pcbs:
           ref: mirror_matrix_inner_top 
           shift: [0.44kx,-0.52ky]
 
-
 ## hole in the thumbcluster
       hole_bottom_thumb_left:
          what: ceoloide/mounting_hole_plated
@@ -284,3 +280,8 @@ pcbs:
          where:
            ref: mirror_thumbfan_home_thumb
            shift: [0.65kx,-0.1ky]
+
+cases:
+  bottom:
+    - name: board
+      extrude: 1
