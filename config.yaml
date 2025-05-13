@@ -210,74 +210,75 @@ pcbs:
           shift: [ 0,0]
           rotate: -90
 
+### outer most holes
       hole_top_left:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_outer_top
-          shift: [0.5kx,-0.3ky]
+          shift: [0.54kx,-0.4ky]
 
       hole_top_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_outer_top
-          shift: [0.5kx,-0.3ky]
+          shift: [0.54kx,-0.4ky]
 
       hole_bottom_left:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_outer_bottom 
-          shift: [0.5kx,-0.3ky]
+          shift: [0.54kx,-0.4ky]
 
       hole_bottom_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_outer_bottom 
-          shift: [0.5kx,-0.3ky]
-
-      hole_middle_top_left:
+          shift: [0.54kx,-0.4ky]
+### holes under the pinky
+      hole_ring_top_left:
         what: ceoloide/mounting_hole_plated
         where:
-          ref: matrix_middle_top
-          shift: [0.5kx,-0.4ky]
+          ref: matrix_ring_top
+          shift: [0.54kx,-0.1ky]
 
-      hole_middle_bottom_left:
+      hole_ring_bottom_left:
         what: ceoloide/mounting_hole_plated
         where:
-          ref: matrix_middle_bottom 
-          shift: [0.5kx,-0.4ky]
+          ref: matrix_ring_bottom 
+          shift: [0.54kx,-0.1ky]
 
-      hole_middle_top_right:
+      hole_ring_top_right:
         what: ceoloide/mounting_hole_plated
         where:
-          ref: mirror_matrix_middle_top
-          shift: [0.5kx,-0.4ky]
+          ref: mirror_matrix_ring_top
+          shift: [0.54kx,-0.1ky]
 
-      hole_middle_bottom_right:
+      hole_ring_bottom_right:
         what: ceoloide/mounting_hole_plated
         where:
-          ref: mirror_matrix_middle_bottom 
-          shift: [0.5kx,-0.4ky]
-
+          ref: mirror_matrix_ring_bottom 
+          shift: [0.54kx,-0.1ky]
+### holes in the center
       hole_top_inner_left:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_inner_top 
-          shift: [0.5kx,-0.3ky]
+          shift: [0.5kx,-0.5ky]
 
       hole_top_inner_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_inner_top 
-          shift: [0.5kx,-0.3ky]
+          shift: [0.5kx,-0.5ky]
 
       hole_bottom_inner_left:
         what: ceoloide/mounting_hole_plated
         where:
           ref: matrix_inner_bottom 
-          shift: [0.5kx,-0.3ky]
+          shift: [0.5kx,-0.5ky]
       hole_bottom_inner_right:
         what: ceoloide/mounting_hole_plated
         where:
           ref: mirror_matrix_inner_bottom 
-          shift: [0.5kx,-0.3ky]
+          shift: [0.5kx,-0.5ky]
 
