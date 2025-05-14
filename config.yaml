@@ -193,7 +193,7 @@ pcbs:
         what: ceoloide/battery_connector_jst_ph_2
         params:
           side: "F"
-          BAT_P: VCC
+          BAT_P: RAW
           BAT_N: GND
         where:
           ref.aggregate.parts: [ matrix_inner_bottom, mirror_matrix_inner_bottom]
