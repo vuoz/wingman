@@ -15,6 +15,7 @@ recursive for the submodule containing extra footprints
 
 2. Run ergogen which will build the pcbs
 ```bash
+npm install -g ergogen
 ergogen .
 ```
 3. Go into the output directory and open it with pcbnew (KiCAD)
