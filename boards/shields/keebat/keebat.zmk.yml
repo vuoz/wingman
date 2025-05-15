@@ -1,6 +1,4 @@
 file_format: "1"
 id: keebat
-name: keebat 
+name: "Keebat shield"
 type: shield
-requires:
-  - pro_micro
