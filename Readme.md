@@ -30,13 +30,13 @@ ergogen .
 3. Assemble the board
 
 #### Bom
-- 42 choc switches 
-- 42 smd diodes
-- 1 nice nano v2
-- 1 reset switch
-- 1 on / off switch
-- 42 keycaps
-- (optionally) print plate and case
+- 42 choc low profile v1 switches [e.g one of these](https://splitkb.com/products/kailh-low-profile-choc-switches)
+- 42 smd diodes (1N4148W)
+- 1 [nice nano v2](https://nicekeyboards.com/nice-nano/)
+- 1 [reset button](https://42keebs.eu/shop/parts/components/reset-switch/?attribute_type=Through-hole%204-pin%206x6&attribute_pa_colour=black)
+- 1 [on / off switch](https://42keebs.eu/shop/parts/components/power-switch/)
+- 42 choc keycaps 
+- (optionall) printed plate and case
 
 
 ### Preview: 
