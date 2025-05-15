@@ -1,0 +1,6 @@
+file_format: "1"
+id: keebat
+name: keebat 
+type: shield
+requires:
+  - pro_micro
