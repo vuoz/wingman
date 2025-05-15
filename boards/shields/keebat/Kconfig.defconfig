@@ -1,6 +1,6 @@
 if SHIELD_KEEBAT
-    # Name must be less than 16 characters long!
-config ZMK_KEEBAT
+
+config ZMK_KEYBOARD_NAME
     default "Keebat"
 
 endif
