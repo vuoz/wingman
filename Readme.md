@@ -44,7 +44,8 @@ coming as soon as I get the pcbs
 
 ![image](./imgs/preview.jpg)
 
-
+#### Assembly
+- Visual guide will follow as soon as i receive the pcbs
 
 
 ### Notes
