@@ -136,9 +136,6 @@ outlines:
         - ref: matrix_ring_bottom
           shift: [-0.25px,-1py]
 
-
-
-
       fillet: 2
   combo:
     - name: board
