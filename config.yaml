@@ -153,17 +153,20 @@ pcbs:
         what: custom/pg1316s
         where: true
         params:
-          rotated: true
+          #rotated: true
           from: "{{col_net}}"
           to: "{{colrow}}"
       diode:
-        what: diode
+        what: ceoloide/diode_tht_sod123
         where: true
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
+          side: "F"
+          include_traces_vias: true
+          reversible: true
         adjust: 
-          shift: [ 0,-5]
+          shift: [ 0,2.7]
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
