@@ -3,6 +3,13 @@
 - keep the layout I am used to
 
 
+## Ultra low profile version
+- Check out the [ultra_low_profile branch](https://github.com/vuoz/keebat/tree/ultra_low_profile)    for the ultra low profile version of this keyboard    
+that uses kailh PG1316s switches    
+**This is still a work in progres**
+
+
+
 ## Small guide
 
 ### If you want to modify or build yourself
