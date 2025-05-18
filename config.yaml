@@ -5,8 +5,8 @@ units:
   ky: cy
   px: kx + 4
   py: ky + 4
-  swx: 14.5
-  swy: 14.5
+  swx: 14
+  swy: 14
 points:
   zones:
     matrix:
