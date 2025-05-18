@@ -20,10 +20,12 @@ git clone --recursive <this repo>
 ```
 recursive for the submodule containing extra footprints   
 
-2. Run ergogen which will build the pcbs
+2. Run ergogen which will build the pcbs and gen the stl files
 ```bash
 npm install -g ergogen
 ergogen .
+## build the switch plate with jscad, which is the format ergogen exports in
+npx @jscad/cli@1 output/cases/bottom.jscad -of stla -o bottom.stl
 ```
 3. Go into the output directory and open it with pcbnew (KiCAD)
 4. Do the routing / modifications

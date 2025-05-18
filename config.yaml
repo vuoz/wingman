@@ -5,6 +5,8 @@ units:
   ky: cy
   px: kx + 4
   py: ky + 4
+  swx: 14.5
+  swy: 14.5
 points:
   zones:
     matrix:
@@ -78,6 +80,15 @@ outlines:
     - what: rectangle
       where: true
       size: [ kx-0.5,ky-0.5]
+  keys_2:
+    - what: rectangle
+      where: true
+      size: [kx-1,ky+1]
+  plate_cutouts:
+    - what: rectangle
+      where: true
+      size: [ swx, swy ]
+      fillet: 0.2
   board:
     - what: polygon
       operation: stack
@@ -147,6 +158,11 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+  combo_case: 
+    - name: board 
+    - operation: subtract
+      name: plate_cutouts 
+
 pcbs:
   main:
     template: kicad8
@@ -286,5 +302,7 @@ pcbs:
 
 cases:
   bottom:
-    - name: board
+    - name: combo_case
       extrude: 1
+
+
