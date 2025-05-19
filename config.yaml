@@ -8,6 +8,9 @@ units:
 points:
   zones:
     matrix:
+      key:
+        padding: 1ky + 1
+        spread: 1kx + 1
       anchor:
         rotate: 8
         shift: [ 100,-100]
@@ -281,5 +284,5 @@ pcbs:
 
 cases:
   bottom:
-    - name: board
+    - name: combo
       extrude: 1
