@@ -303,6 +303,5 @@ pcbs:
 cases:
   bottom:
     - name: combo_case
-      extrude: 1
-
+      extrude: 1.5
 
