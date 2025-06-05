@@ -47,7 +47,9 @@ npx @jscad/cli@1 output/cases/bottom.jscad -of stla -o bottom.stl
 - 42 choc keycaps 
 - (optionall) printed plate and case
 
-
+### Assembled 
+![image](./imgs/keebat.jpeg)
+ 
 ### Preview: 
 coming as soon as I get the pcbs   
 
