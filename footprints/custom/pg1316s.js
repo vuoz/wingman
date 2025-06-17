@@ -10,7 +10,6 @@ module.exports = {
 
         at = p.at
 
-        // if the user wants the footrint to be rotated, we first get the previous rotation and then add 180
         if (p.rotated) {
             const prev_rotation = p.at.split(" ")[3].trim().replaceAll(")", "")
             const new_rotation = (parseFloat(prev_rotation) + 180) % 360;
@@ -71,7 +70,7 @@ module.exports = {
                        (fp_rect (start -6.75 -6.5) (end 6.75 6.5)
                          (stroke (width 0.1) (type default)) (fill none) (layer "${p.side}.Fab")(uuid "e4d1daaa-fd44-4463-b94c-0aa1f91f701d"))
 
-                     (pad "1" smd rect (at -2.5 2.65 ${p.r}) (size 1.55 2) (layers "${p.side}.Cu" "${p.side}.Paste" "${p.side}.Mask")
+                     (pad "1" smd rect (at -2.5 2.65 ${p.r}) (size 1.55 2) (layers "F.Cu" "F.Paste" "F.Mask")
                          (thermal_bridge_angle 45)
                      (uuid "b16ef624-f803-4629-b8d3-ee13895d7e96")
                         ${p.from.str}
@@ -82,6 +81,30 @@ module.exports = {
                         ${p.to.str}
 
                        )
+                     (pad "1" smd rect (at -2.5 2.65 ${p.r}) (size 1.55 2) (layers "B.Cu" "B.Paste" "B.Mask")
+                         (thermal_bridge_angle 45)
+                     (uuid "b16ef624-f803-4629-b8d3-ee13895d7e96")
+                        ${p.from.str}
+                       )
+                       (pad "2" smd rect (at 2.5 2.65 ${p.r} ) (size 1.55 2) (layers "B.Cu" "B.Paste" "B.Mask")
+                         (thermal_bridge_angle 45)
+                     (uuid "583c2dd3-7257-4205-bf03-9b082d228f40")
+                        ${p.to.str}
+
+                       )
+                       (pad "1" thru_hole circle
+                            (at -2.5 2.65 ${p.r})
+                            (size 0.80 0.80)         
+                            (drill 0.80)
+                            (layers "*.Cu" "*.Mask")  
+                            (tstamp "PG1316-PTH-1"))
+                       (pad "2" thru_hole circle
+                            (at  2.5 2.65 ${p.r})
+                            (size 0.80 0.80)
+                            (drill 0.80)
+                            (layers "*.Cu" "*.Mask")
+                            (tstamp "PG1316-PTH-2"))
+
                        (pad "3" smd rect (at -6.35 -6 ${p.r} )  (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask")
                          (thermal_bridge_angle 45)
                      (uuid "e312cf65-691b-4c88-9647-c49e7179fa47")

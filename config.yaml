@@ -3,14 +3,12 @@ meta:
 units:
   kx: cx
   ky: cy
-  px: kx + 4
-  py: ky + 4
+  px: kx + 2
+  py: ky + 2
 points:
   zones:
     matrix:
       key:
-        padding: 1ky + 1
-        spread: 1kx + 1
       anchor:
         rotate: 8
         shift: [ 100,-100]
