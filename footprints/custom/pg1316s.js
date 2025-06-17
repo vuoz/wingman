@@ -83,27 +83,31 @@ module.exports = {
                        )
                      (pad "1" smd rect (at -2.5 2.65 ${p.r}) (size 1.55 2) (layers "B.Cu" "B.Paste" "B.Mask")
                          (thermal_bridge_angle 45)
-                     (uuid "b16ef624-f803-4629-b8d3-ee13895d7e96")
+                     (uuid "b1249666-285a-44ec-9b33-d1d36fc52e05")
                         ${p.from.str}
                        )
                        (pad "2" smd rect (at 2.5 2.65 ${p.r} ) (size 1.55 2) (layers "B.Cu" "B.Paste" "B.Mask")
                          (thermal_bridge_angle 45)
-                     (uuid "583c2dd3-7257-4205-bf03-9b082d228f40")
+                     (uuid "290509d1-11fd-4269-b38d-d2c4037f8872")
                         ${p.to.str}
 
                        )
                        (pad "1" thru_hole circle
+                            ${p.from.str}
                             (at -2.5 2.65 ${p.r})
-                            (size 0.80 0.80)         
-                            (drill 0.80)
+                            (size 1.2 1.2)         
+                            (drill 1)
                             (layers "*.Cu" "*.Mask")  
-                            (tstamp "PG1316-PTH-1"))
+                            (tstamp "PG1316-PTH-1")
+                       )
                        (pad "2" thru_hole circle
+                            ${p.to.str}
                             (at  2.5 2.65 ${p.r})
-                            (size 0.80 0.80)
-                            (drill 0.80)
+                            (size 1.2 1.2)
+                            (drill 1)
                             (layers "*.Cu" "*.Mask")
-                            (tstamp "PG1316-PTH-2"))
+                            (tstamp "PG1316-PTH-2")
+                       )    
 
                        (pad "3" smd rect (at -6.35 -6 ${p.r} )  (size 2 2) (layers "F.Cu" "F.Paste" "F.Mask")
                          (thermal_bridge_angle 45)
