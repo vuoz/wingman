@@ -115,7 +115,7 @@ outlines:
         - ref: mirror_matrix_pinky_bottom
           shift: [-0.5px,-0.5py]
         - ref: mirror_matrix_ring_bottom
-          shift: [-0.25px,-1.08py]
+          shift: [-0.44px,-1.10py]
         - ref: mirror_matrix_middle_bottom
           shift: [-0.5px,-1py]
         - ref: mirror_thumbfan_near_thumb
@@ -137,7 +137,7 @@ outlines:
         - ref: matrix_middle_bottom
           shift: [-0.5px,-1py]
         - ref: matrix_ring_bottom
-          shift: [-0.25px,-1.08py]
+          shift: [-0.44px,-1.10py]
 
       fillet: 2
   combo:
