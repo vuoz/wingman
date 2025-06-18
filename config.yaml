@@ -9,6 +9,8 @@ points:
   zones:
     matrix:
       key:
+        spread: 17
+        padding: 17
       anchor:
         rotate: 8
         shift: [ 100,-100]
@@ -44,17 +46,17 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-15, -20]
+        shift: [-18, -18]
       columns:
         near:
           key.col_net: P7
         home:
-          key.spread: 21.25
+          key.spread: 17
           key.splay: -5
           key.origin: [-11.75, -9]
           key.col_net: P8
         far:
-          key.spread: 21.25
+          key.spread: 17
           key.splay: -15
           key.origin: [-9.5, -9]
           key.col_net: P9
@@ -66,7 +68,7 @@ points:
   rotate: -20
   mirror:
     ref: matrix_pinky_home
-    distance: 12kx
+    distance: 11kx
 outlines:
   raw:
     - what: rectangle
@@ -113,7 +115,7 @@ outlines:
         - ref: mirror_matrix_pinky_bottom
           shift: [-0.5px,-0.5py]
         - ref: mirror_matrix_ring_bottom
-          shift: [-0.25px,-1py]
+          shift: [-0.25px,-1.08py]
         - ref: mirror_matrix_middle_bottom
           shift: [-0.5px,-1py]
         - ref: mirror_thumbfan_near_thumb
@@ -135,7 +137,7 @@ outlines:
         - ref: matrix_middle_bottom
           shift: [-0.5px,-1py]
         - ref: matrix_ring_bottom
-          shift: [-0.25px,-1py]
+          shift: [-0.25px,-1.08py]
 
       fillet: 2
   combo:
@@ -207,78 +209,78 @@ pcbs:
 
 
 ### outer most holes
-      hole_top_left:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: matrix_outer_top
-          shift: [0.54kx,-0.55ky]
-
-      hole_top_right:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: mirror_matrix_outer_top
-          shift: [0.54kx,-0.55ky]
-
-      hole_bottom_left:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: matrix_outer_bottom 
-          shift: [0.54kx,-0.15ky]
-
-      hole_bottom_right:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: mirror_matrix_outer_bottom 
-          shift: [0.54kx,-0.15ky]
-### holes under the pinky
-      hole_ring_top_left:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: matrix_ring_top
-          shift: [0.55kx,-0.3ky]
-
-      hole_ring_bottom_left:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: matrix_ring_bottom 
-          shift: [0.5kx,+0.05ky]
-
-      hole_ring_top_right:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: mirror_matrix_ring_top
-          shift: [0.55kx,-0.3ky]
-
-      hole_ring_bottom_right:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: mirror_matrix_ring_bottom 
-          shift: [0.5kx,+0.05ky]
-### holes in the center
-      hole_top_inner_left:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: matrix_index_top 
-          shift: [0.52kx,-0.6ky]
-
-      hole_top_inner_right:
-        what: ceoloide/mounting_hole_plated
-        where:
-          ref: mirror_matrix_index_top 
-          shift: [0.52kx,-0.6ky]
-
+#       hole_top_left:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: matrix_outer_top
+#           shift: [0.54kx,-0.55ky]
+#
+#       hole_top_right:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: mirror_matrix_outer_top
+#           shift: [0.54kx,-0.55ky]
+#
+#       hole_bottom_left:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: matrix_outer_bottom 
+#           shift: [0.54kx,-0.15ky]
+#
+#       hole_bottom_right:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: mirror_matrix_outer_bottom 
+#           shift: [0.54kx,-0.15ky]
+# ### holes under the pinky
+#       hole_ring_top_left:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: matrix_ring_top
+#           shift: [0.55kx,-0.3ky]
+#
+#       hole_ring_bottom_left:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: matrix_ring_bottom 
+#           shift: [0.5kx,+0.05ky]
+#
+#       hole_ring_top_right:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: mirror_matrix_ring_top
+#           shift: [0.55kx,-0.3ky]
+#
+#       hole_ring_bottom_right:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: mirror_matrix_ring_bottom 
+#           shift: [0.5kx,+0.05ky]
+# ### holes in the center
+#       hole_top_inner_left:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: matrix_index_top 
+#           shift: [0.52kx,-0.6ky]
+#
+#       hole_top_inner_right:
+#         what: ceoloide/mounting_hole_plated
+#         where:
+#           ref: mirror_matrix_index_top 
+#           shift: [0.52kx,-0.6ky]
+#
 ## hole in the thumbcluster
-      hole_bottom_thumb_left:
-         what: ceoloide/mounting_hole_plated
-         where:
-           ref: thumbfan_home_thumb
-           shift: [0.65kx,-0.1ky]
-
-      hole_bottom_thumb_right:
-         what: ceoloide/mounting_hole_plated
-         where:
-           ref: mirror_thumbfan_home_thumb
-           shift: [0.65kx,-0.1ky]
+      # hole_bottom_thumb_left:
+      #    what: ceoloide/mounting_hole_plated
+      #    where:
+      #      ref: thumbfan_home_thumb
+      #      shift: [0.65kx,-0.1ky]
+      #
+      # hole_bottom_thumb_right:
+      #    what: ceoloide/mounting_hole_plated
+      #    where:
+      #      ref: mirror_thumbfan_home_thumb
+#           shift: [0.65kx,-0.1ky]
 
 cases:
   bottom:

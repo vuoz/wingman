@@ -95,7 +95,7 @@ module.exports = {
                        (pad "1" thru_hole circle
                             ${p.from.str}
                             (at -2.5 2.65 ${p.r})
-                            (size 1.2 1.2)         
+                            (size 1.4 1.4)         
                             (drill 1)
                             (layers "*.Cu" "*.Mask")  
                             (tstamp "PG1316-PTH-1")
@@ -103,7 +103,7 @@ module.exports = {
                        (pad "2" thru_hole circle
                             ${p.to.str}
                             (at  2.5 2.65 ${p.r})
-                            (size 1.2 1.2)
+                            (size 1.4 1.4)
                             (drill 1)
                             (layers "*.Cu" "*.Mask")
                             (tstamp "PG1316-PTH-2")

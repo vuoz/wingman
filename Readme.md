@@ -50,4 +50,5 @@ coming as soon as I get the pcbs
 
 ### Notes
 - Thanks to [dustdfg](https://dustdfg.itch.io/pixel-art-bat-1bit) for the pixel art
+- Thanks to mike for the base footprint files for the pg1316 switch. check out his pg1316s based keyboard [here](https://github.com/mikeholscher/zmk-config-mikefive)
 
