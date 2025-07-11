@@ -1,6 +1,8 @@
 meta:
   engine: 4.1.0
 units:
+  x: 17
+  y: 17
   kx: cx
   ky: cy
   px: kx + 2
@@ -74,6 +76,10 @@ outlines:
     - what: rectangle
       where: true
       size: [px,py]
+  raw_2:
+    - what: rectangle
+      where: true
+      size: [16,16]
   keys:
     - what: rectangle
       where: true
@@ -138,12 +144,18 @@ outlines:
           shift: [-0.5px,-1py]
         - ref: matrix_ring_bottom
           shift: [-0.44px,-1.10py]
-
       fillet: 2
-  combo:
+
+  board_expand:                
+    - what: outline           
+      name: board             
+      expand: 1.5                
+      fillet: 2
+
+  frontplate:
     - name: board
     - operation: subtract
-      name: keys
+      name: raw_2
 pcbs:
   main:
     template: kicad8
@@ -156,7 +168,6 @@ pcbs:
         what: custom/pg1316s
         where: true
         params:
-          #rotated: true
           from: "{{col_net}}"
           to: "{{colrow}}"
       diode:
@@ -282,7 +293,3 @@ pcbs:
       #      ref: mirror_thumbfan_home_thumb
 #           shift: [0.65kx,-0.1ky]
 
-cases:
-  bottom:
-    - name: combo
-      extrude: 1
