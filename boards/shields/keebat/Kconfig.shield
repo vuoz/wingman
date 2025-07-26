@@ -1,3 +1,0 @@
-config SHIELD_KEEBAT
-    def_bool $(shields_list_contains,keebat)
-

@@ -1,0 +1,6 @@
+if SHIELD_WINGMAN
+
+config ZMK_KEYBOARD_NAME
+    default "Wingman"
+
+endif
