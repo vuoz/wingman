@@ -1,6 +1,10 @@
 # Wingman
 
 ![wingman](./imgs/wingman.jpeg)
+![papermoded](./imgs/papermod.jpeg)
+this has the papermod applied, which makes the switches sound much better
+
+
 ## What makes this unique in the sea of other pg1316s based boards ?
 - This board can be 100% hand soldered with a normal soldering iron. No hot plate required
 - The custom footprint makes soldering the switches quite managable, compared to hot plate soldering the switches to smd pads 
