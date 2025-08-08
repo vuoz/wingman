@@ -28,8 +28,8 @@ if you have never built a keyboard I would advise against this being your first 
 ## PCB ordering guide
 - 1mm thickness is a must. The case is designed for 1mm thickness.
 - Choose a nice solder mask color, as this will be visible. White or black will look best with most case colors.
-- For safety reasons, I would recommend to go with the lead free HASL finish
-unfortunately, this combo gets a bit expensive, but it is necessary to have proper fit and look.
+- For safety reasons, I would recommend to go with the lead free HASL finish    
+=> unfortunately this combo gets a bit expensive, but it is necessary to have proper fit and look.
 
 
 
