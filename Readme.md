@@ -115,7 +115,7 @@ Once all diodes are attached on one side, rotate the pcb and add solder to the o
 
 
 
-#### Printin instructions for the case (FDM)
+#### Printing instructions for the case (FDM)
 - Print with a 0.2mm nozzle on the best / most accurate setting. Otherwise the very thin walls for the main compartment will not print correctly
 - Print the top part top side down, for a smoother finish
 - To avoid warping, print the parts with less than 30% infill
