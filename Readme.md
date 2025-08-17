@@ -91,13 +91,35 @@ Once all diodes are attached on one side, rotate the pcb and add solder to the o
 
 
 #### Soldering the reset switch
-....
+1. Insert the reset switch into the reset switch holes on the pcb. 
+2. Turn around the pcb and cut the reset switches pins flush with your flush cutters.
+3. Turn the pcb around to the front again.
+4. Add solder to the 2 pins that you inserted into the reset switch through holes that you just cut flushed.
+
+#### Soldering the power switch
+1. Insert the power switch into the power switch holes on the pcb.
+2. Hold it in place with tweezers, while you add a blob of solder to one of the pads
+3. Now add solder to all of the other pads
+4. Touch up all the solder joints and make sure they do not use an excess amount of solder.
+
+
+#### Assembling the case
+1. Preheat the soldering iron to < 300C
+2. Place a threaded insert onto the preprinted holes in the top part of the case
+3. Use the soldering iron to heat the threaded insert, while applying a bit of pressure to the insert. **Make sure it sits flush once inserted**
+4. Repeat that with all other threaded insert holes
+5. Now place the pcb into the top part of the case.
+6. Now place the backplate on top of the pcb.
+7. Use the M2 srews to attach the backplate to the top part of the case
+8. Place rubber feet into the preprinted holes in the backplate of the case.
+
 
 
 #### Printin instructions for the case (FDM)
 - Print with a 0.2mm nozzle on the best / most accurate setting. Otherwise the very thin walls for the main compartment will not print correctly
 - Print the top part top side down, for a smoother finish
 - To avoid warping, print the parts with less than 30% infill
+- Make sure to print with supports. I used tree supports
 
 ### Notes
 - Thanks to mike for the base footprint files for the pg1316 switch. Check out his pg1316s based keyboard [here](https://github.com/mikeholscher/zmk-config-mikefive), I took his footprint and modified it to make soldering much easier with phts inside the pads.      
