@@ -49,21 +49,51 @@ if you have never built a keyboard I would advise against this being your first 
 
 
 ### Build guide
-- Big parts of the guide are missing.
-- I plan to make a video guide.
 
+#### Disclaimer
+- **Images will be added soon**
 #### Soldering the diodes
-1. Check the direction of the diode. Check you have the right direction with a multimeter.
-2. ...
+##### Disclaimer
+- Please be very careful with the diodes and only move them, once the solder they are attached with is liquid, otherwise you might rip out a pad on the pcb, which would ruin your whole pcb.
+1. Add a bit of solder to one of the diode pads.  **Make sure you only add solder to one of the pads at this point**
+2. Repeat this for all diode pads.
+3. Now sort your diodes by direction. **This is very important, as the diodes have a fixed direction.**
+To sort the diodes in the right direction, you first located the thin white lines on one side of the diode. Now align that with the straight line on the diode pads. The arrow on the pad should "point into" the line on the diode.
+4. While heating the one pad that already has solder, place the diode on the pad with a set of tweezers making sure it aligns very well with both pads. **The alignment is very crucial, as there is little room underneath the switch**.   
+Once all diodes are attached on one side, rotate the pcb and add solder to the other side of the diode. 
+5. Lastly remove all excess solder from the pads, by touching up the pads with a soldering iron and using a solder sucker if necessary.
+
+
 #### Soldering the swiches
 1. All diodes **have** to be soldered at this point. There is no turning back once a switch is soldered. 
-2. Solder column by column. Place one row of switches on the board. Make sure the switches fall into their alignment holes
-3. Tape them to the pcb, making sure they have not moved. 
+2. Solder column by column. Place one column of switches on the board. Make sure the switches fall into their alignment holes
+3. Tape them to the pcb, making sure they have not moved out of their alignment holes. 
 4. Flip the board so you see the pads from the bottom of the pcb
 5. Drop solder into the holes inside the pads. Make sure the solder flows into the holes and has time to flow well. 
 6. Check the continuity of the switches with a multimeter, make sure they are all working. This will save you a lot of frustration.
 7. Remove the tape and flip the pcb back to the top side.
 8. Continue with the next column
+9. Once you know that every switch on the pcb is working, you can move on to the controller.
+
+
+
+#### Soldering the controller
+1. Make sure that your controller is not faulty, by flashing it with the zmk firmware and checking if the blue lights appear on connection
+2. **Place the controller into a breadboard with the back side of the controller (so the side, which has no  components visible) facing up ( to you).**
+3. Now insert each MilMax pin into the pin holes of the controller and into the breadboard. Make sure that the MilMax all sit nearly flush with the top side of the controller
+4. Now solder each MilMax pin to the controller. **Make sure you soldering iron is not too hot, 280-300C is enough.**
+5. Now once all you pins are attached to the controller. Place the controller into the pcb (once again with the back side facing up).
+6. Make sure your controller sits flush with the pcb. Tape it inplace and make sure it does not move.o
+7. Flip the PCB, with the controller in place. Now solder the 4 corner pins to the Pcb.
+8. Cut all MillMax pins flush to the pcb,including the 4 corner pins.
+9. Now solder all other pins and make sure not to use too much solder.
+10. Remove the tape.
+
+
+#### Soldering the reset switch
+....
+
+
 #### Printin instructions for the case (FDM)
 - Print with a 0.2mm nozzle on the best / most accurate setting. Otherwise the very thin walls for the main compartment will not print correctly
 - Print the top part top side down, for a smoother finish
